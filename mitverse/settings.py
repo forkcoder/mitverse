@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mu(nuf-(8wl7!&$05486e9!+be-9jsndzf)!@$_1rbr-it&3o=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['test.forkcoder.com','localhost','127.0.0.1']
 
 
 # Application definition
