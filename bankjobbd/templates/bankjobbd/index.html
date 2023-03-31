@@ -1,0 +1,12 @@
+{% extends "bankjobbd/layout.html" %}
+{% block body%}
+<h1> Tasks </h1>
+<ui>
+    {% for task in tasks %}
+    <li>{{ task }}</li>
+    {% empty %}
+    <li> Empty </li>
+    {% endfor %}
+    <a href="{% url 'bankjobbd:add' %}" >Add new Task</a>
+</ui>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<header>
+    <title> Puthibidda </title>
+    <link href="{% static 'puthibidda/styles.css'%}" rel="stylesheet"></link>
+</header>
+
+<body>
+    {% if newyear %}
+    <h1> YES </h1>
+    {% else %}
+    <h1> NO </h1>
+    {% endif %}
+</body>
+
+</html>
