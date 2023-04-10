@@ -11,7 +11,9 @@
 <h1> Passengers </h1>
     <ul>
         {% for passenger in passengers %}
-        <li> passenger </li>
+        <li> {{passenger}} </li>
+        {% empty %}
+        <li> EMPTY LIST </li>
         {% endfor %}
     </ul>
 {% endblock %}
