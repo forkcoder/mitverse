@@ -2,6 +2,14 @@ on:
   push:
     branches:
       - main
+  workflow_call:
+    secrets:
+      ftp_username:
+        description: 'The username to access ftp server'
+        required: true
+      ftp_password:
+        description: 'The password to access ftp server'
+        required: true  
 name: 🚀 Mitverse
 jobs:
   web-deploy:
@@ -15,7 +23,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.forkcoder.com
-        username: mitverse@forkcoder.com
-        password: P_[vm6F9DXtB
+        username: ${{ secrects.ftp_username }}
+        password: ${{ secrects.ftp_password }}
         server-dir: /repositories/mitverse/
         port: 21
