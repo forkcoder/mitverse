@@ -27,7 +27,6 @@ jobs:
       with:
         server: ftp.forkcoder.com
         port: 21
-      env:
-        server-dir: ${{ ftp_location }}
-        username: ${{ ftp_username }}
-        password: ${{ ftp_password }}
+        server-dir: ${{ env.ftp_location }}
+        username: ${{ env.ftp_username }}
+        password: ${{ env.ftp_password }}
