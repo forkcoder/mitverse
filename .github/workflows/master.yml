@@ -14,7 +14,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: forkcoder.com
+        server: ftp.forkcoder.com
         username: ${{ secrects.FTP_USERNAME }}
         password: ${{ secrects.FTP_PASSWORD }}
         server-dir: /repositories/mitverse/
+        port: 21
