@@ -1,15 +1,15 @@
 on:
-  workflow_call:
-    secrets:
-      username:
-        description: 'The username to access ftp server'
-        required: true
-      password:
-        description: 'The password to access ftp server'
-        required: true 
-      server-dir:   
-        description: 'The location of ftp storage'
-        required: true 
+  # workflow_call:
+  #   secrets:
+  #     username:
+  #       description: 'The username to access ftp server'
+  #       required: true
+  #     password:
+  #       description: 'The password to access ftp server'
+  #       required: true 
+  #     server-dir:   
+  #       description: 'The location of ftp storage'
+  #       required: true 
   push:
     branches:
       - main
