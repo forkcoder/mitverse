@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: forkcoder.com
-        username: mitverse
-        password: LU2S(jjDw^bi
+        username: ${{ secrects.ftp_username }}
+        password: ${{ secrects.ftp_password }}
         server-dir: /repositories/mitverse/
