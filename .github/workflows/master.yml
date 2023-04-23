@@ -1,15 +1,15 @@
 on:
-  workflow_call:
-    secrets:
-      username:
-        description: 'The username to access ftp server'
-        required: true
-      password:
-        description: 'The password to access ftp server'
-        required: true 
-      server-dir:   
-        description: 'The location of ftp storage'
-        required: true 
+  # workflow_call:
+  #   secrets:
+  #     username:
+  #       description: 'The username to access ftp server'
+  #       required: true
+  #     password:
+  #       description: 'The password to access ftp server'
+  #       required: true 
+  #     server-dir:   
+  #       description: 'The location of ftp storage'
+  #       required: true 
   push:
     branches:
       - main
@@ -28,6 +28,6 @@ jobs:
         server: ftp.forkcoder.com
         port: 21
       env:
-        server-dir: ${{ secrects.ftp_location }}
-        username: ${{ secrects.ftp_username }}
-        password: ${{ secrects.ftp_password }}
+        server-dir: ${{ ftp_location }}
+        username: ${{ ftp_username }}
+        password: ${{ ftp_password }}
