@@ -18,4 +18,4 @@ jobs:
         port: 21
         ftp_location: ${{ secrects.FtpLocation }}
         ftp_username: ${{ secrects.FtpUsername }}
-        ftp_password: ${{ secrects.FtpPassword }}
+        ftp_password: 8aW}7ecO&3X{
