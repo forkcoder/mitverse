@@ -16,6 +16,6 @@ jobs:
       with:
         server: ftp.forkcoder.com
         port: 21
-        ftp_location: /repositories/mitverse/
-        ftp_username: mitverse
+        ftp_location: /repositories/mitverse
+        ftp_username: mitverse@forkcoder.com
         ftp_password: 8aW}7ecO&3X{
