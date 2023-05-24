@@ -14,8 +14,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.forkcoder.com
-        port: 21
-        server-dir: /home/forkrswl/repositories/mitverse/
-        username: mitverse@forkcoder.com
-        password: 1T6fJr={=A~i
+        ftp-server: ftp.forkcoder.com
+        remote-dir: /home/forkrswl/repositories/mitverse/
+        ftp-username: mitverse@forkcoder.com
+        ftp-password: 1T6fJr={=A~i
