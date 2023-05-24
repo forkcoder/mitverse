@@ -16,6 +16,6 @@ jobs:
       with:
         server: ftp.forkcoder.com
         port: 21
-        server-dir: repositories/mitverse
+        server-dir: /home/forkrswl/repositories/mitverse/
         username: mitverse@forkcoder.com
         password: 1T6fJr={=A~i
