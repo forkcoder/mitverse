@@ -126,6 +126,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/_next/static/'
 
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'react-app', 'build', 'static'),
 ]
