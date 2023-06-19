@@ -1,5 +1,5 @@
 db.sqlite3
-__pycache__/
+mitverse/__pycache__/
 env/
 .idea/
 static/
