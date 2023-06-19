@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-mu(nuf-(8wl7!&$05486e9!+be-9jsndzf)!@$_1rbr-it&3o=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['test.forkcoder.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['test.forkcoder.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build/server/app/')
+            os.path.join(BASE_DIR, 'static/build/server/app/')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -126,7 +126,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/_next/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend', 'build', 'static'),
+    os.path.join(BASE_DIR, 'static', 'build', 'static'),
 ]
 # STATICFILES_DIRS = [str(PROJECT_DIR / "static")]
 # Default primary key field type
