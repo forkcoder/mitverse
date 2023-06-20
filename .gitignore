@@ -2,4 +2,3 @@ db.sqlite3
 mitverse/__pycache__/
 env/
 .idea/
-static/
