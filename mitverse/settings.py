@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mu(nuf-(8wl7!&$05486e9!+be-9jsndzf)!@$_1rbr-it&3o='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['django.forkcoder.com', 'localhost', '127.0.0.1']
 
@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'static/server/app/')
+            # os.path.join(BASE_DIR, 'static/server/app/')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -127,9 +127,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/_next/static/'
 
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'react-app', 'build', 'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'react-app', 'build', 'static'),
+# ]
 # STATICFILES_DIRS = [str(PROJECT_DIR / "static")]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
