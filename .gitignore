@@ -1,4 +1,8 @@
 db.sqlite3
+__pycache__/
 mitverse/__pycache__/
+flights/__pycache__/
+webdrive/__pycache__/
+puthibidda/__pycache__/
 env/
 .idea/
